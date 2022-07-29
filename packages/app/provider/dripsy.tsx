@@ -1,12 +1,11 @@
 import { DripsyProvider, makeTheme } from 'dripsy'
 
+import colors from '../theme/colors'
+import text from '../theme/text'
+
 const theme = makeTheme({
-  // https://www.dripsy.xyz/usage/theming/create
-  text: {
-    p: {
-      fontSize: 16,
-    },
-  },
+  colors,
+  text,
 })
 
 export function Dripsy({ children }: { children: React.ReactNode }) {
