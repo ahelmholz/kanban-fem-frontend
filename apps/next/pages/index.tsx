@@ -1,3 +1,3 @@
-import { HomeScreen } from 'app/views/home/screen'
+import { LandingScreen } from 'app/views/landing/screen'
 
-export default HomeScreen
+export default LandingScreen
