@@ -37,7 +37,7 @@ export function LandingScreen() {
             backgroundColor: '$lightPurple',
             paddingX: '20px',
             paddingY: '12px',
-            borderRadius: '20px',
+            borderRadius: 20,
           }}
         >
           To Home Page
