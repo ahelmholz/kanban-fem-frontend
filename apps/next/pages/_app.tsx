@@ -4,19 +4,21 @@ import React from 'react'
 import type { SolitoAppProps } from 'solito'
 import 'raf/polyfill'
 
+import Layout from '../components/Layout'
+
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   return (
     <>
       <Head>
-        <title>Solito Example App</title>
-        <meta
-          name="description"
-          content="Expo + Next.js with Solito. By Fernando Rojo."
-        />
+        <title>Kanban</title>
+        {/* TODO: add authors names */}
+        <meta name="description" content="Kanban board by: " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Provider>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </Provider>
     </>
   )

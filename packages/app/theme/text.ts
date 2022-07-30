@@ -1,32 +1,32 @@
 export default {
-  heading_xl: {
-    fontSize: '24px',
-    lineHeight: '30px',
+  $heading_xl: {
+    fontSize: 24,
+    lineHeight: 30,
     fontWeight: 'bold',
   },
-  heading_l: {
-    fontSize: '18px',
-    lineHeight: '23px',
+  $heading_l: {
+    fontSize: 18,
+    lineHeight: 23,
     fontWeight: 'bold',
   },
-  heading_m: {
-    fontSize: '15px',
-    lineHeight: '19px',
+  $heading_m: {
+    fontSize: 15,
+    lineHeight: 19,
     fontWeight: 'bold',
   },
-  heading_s: {
-    fontSize: '12px',
-    lineHeight: '15px',
+  $heading_s: {
+    fontSize: 12,
+    lineHeight: 15,
     fontWeight: 'bold',
   },
-  body_l: {
-    fontSize: '13px',
-    lineHeight: '23px',
+  $body_l: {
+    fontSize: 13,
+    lineHeight: 23,
     fontWeight: '500',
   },
-  body_m: {
-    fontSize: '12px',
-    lineHeight: '15px',
+  $body_m: {
+    fontSize: 12,
+    lineHeight: 15,
     fontWeight: 'bold',
   },
 }

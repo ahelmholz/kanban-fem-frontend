@@ -1,7 +1,14 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
+import Layout from '../../../../apps/expo/components/Layout'
 import { HomeScreen } from '../../views/home/screen'
 import { UserDetailScreen } from '../../views/user/detail-screen'
+
+const layoutWrapper = (component) => {
+  return () => {
+    return <Layout>{component}</Layout>
+  }
+}
 
 const Stack = createNativeStackNavigator<{
   home: undefined
@@ -15,14 +22,14 @@ export function NativeNavigation() {
     <Stack.Navigator>
       <Stack.Screen
         name="home"
-        component={HomeScreen}
+        component={layoutWrapper(HomeScreen)}
         options={{
           title: 'Home',
         }}
       />
       <Stack.Screen
         name="user-detail"
-        component={UserDetailScreen}
+        component={layoutWrapper(UserDetailScreen)}
         options={{
           title: 'User',
         }}

@@ -1,21 +1,25 @@
-import { ScrollView, Text, View } from 'dripsy'
-import Header from 'app/components/Header'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
+import { Row, ScrollView, View } from 'dripsy'
+
 import { ColorModeContext, ColorModes } from 'app/provider/color-mode'
 
 export function HomeScreen() {
-  const { mode, toggle } = useContext(ColorModeContext)
+  const { mode } = useContext(ColorModeContext)
   return (
-    <ScrollView
+    <View
       sx={{
+        flex: 1,
         backgroundColor:
           mode === ColorModes.light ? '$lightGray' : '$veryDarkGray',
       }}
     >
-      <Header />
-      <View>
-        <Text onPress={toggle}>toggle me</Text>
-      </View>
-    </ScrollView>
+      <ScrollView style={{ flex: 1 }}>
+        <View sx={{ height: 300 }}></View>
+        <View sx={{ height: 300 }}></View>
+        <View sx={{ height: 300 }}></View>
+        <View sx={{ height: 300 }}></View>
+        <View sx={{ height: 300 }}></View>
+      </ScrollView>
+    </View>
   )
 }

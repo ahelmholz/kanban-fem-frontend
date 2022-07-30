@@ -24,6 +24,18 @@ const Header = () => {
           height: 24,
         }}
       />
+      <Image
+        sx={{ display: ['none', null, 'flex'], height: 26, width: 152 }}
+        source={{
+          // TODO: need to come up with url pattern
+          uri:
+            mode === ColorModes.light
+              ? '/assets/logo-dark.svg'
+              : '/assets/logo-light.svg',
+          width: 24,
+          height: 24,
+        }}
+      />
     </Row>
   )
 }
